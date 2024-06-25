@@ -408,7 +408,11 @@ footer li a:hover::after{
 @media(max-width: 420px) {
 
   body {
-    font-size: 50%;
+    font-size: 60%;
+  }
+
+  h1 {
+    font-size: 90%
   }
   nav{
     flex-wrap: wrap;
