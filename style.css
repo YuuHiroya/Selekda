@@ -381,7 +381,7 @@ footer li a:hover::after{
 
 @media(max-width: 500px) {
   body{
-    font-size: 70%;
+    font-size: 85%;
   }
 
   .card-begginer{
@@ -407,13 +407,7 @@ footer li a:hover::after{
 
 @media(max-width: 420px) {
 
-  body {
-    font-size: 60%;
-  }
 
-  h1 {
-    font-size: 90%
-  }
   nav{
     flex-wrap: wrap;
     margin: 2% 0 4%;
