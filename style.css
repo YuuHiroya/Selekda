@@ -1,0 +1,450 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rammetto+One&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rammetto+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", Poppins, Verdana, sans-serif;
+  
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  margin: 2% 5% 4%;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  
+}
+
+
+.logo {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  margin-right: auto;
+  font-weight: 900;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+
+nav ul {
+  display: flex;
+}
+
+.search i {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+
+
+nav li a {
+  color: black;
+}
+
+nav li{
+  padding: 10px;
+  margin-right: 10px;
+  transition: 0.1s;
+  cursor: pointer;
+  margin: auto;
+}
+
+nav li:hover {
+  background-color: rgb(232, 232, 232);
+}
+
+
+.container {
+  align-items: center;
+  padding: 2% 5%;
+}
+
+.contain-box{
+  display: flex;
+  gap: 2rem;
+}
+
+.card-begginer {
+  width: 840px;
+  height: 300px;
+  border-radius: 36px;
+ background-image: url(image/assets\ \(1\).jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  cursor: pointer;
+  transition: 0.3s;
+  
+}
+
+.card-begginer:hover {
+  scale: 1.02;
+}
+
+.text h1{
+  margin-bottom: .50rem;
+}
+
+h1 {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.container p {
+  font-weight: 400;
+}
+
+.team-esport h1,
+.categorize-game h1 {
+  text-align: center;
+  padding: 2rem;
+}
+
+/* card */
+
+
+.all-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 3% 5%;
+  gap: 1rem;
+}
+
+.card {
+  position: relative;
+  border-radius: 10px;
+  padding: 1rem ;
+  height: 100%;
+  width: 100%;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.caption {
+  left: 0;
+  top: 0;
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  border-radius: 10px;
+  opacity: 0;
+  transition: all 0.5s;
+  font-size: 1.5rem;
+
+}
+
+.card:hover .caption {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+.card-image {
+  height: 150px;
+  background: rgb(248, 248, 248);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-image img{
+  width: 100px;
+}
+
+.text-card {
+  margin-top: 10px;
+}
+
+.card:hover {
+  scale: 1.05;
+}
+
+.list-game{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 3% 5% 5%;
+    gap: 2rem;
+    margin: auto;
+    justify-content: space-between;
+    
+}
+
+
+
+.list-game img {
+    width: 150px;
+}
+
+/* gallery */
+
+.slide-show-wrapper {
+  text-align: center;
+}
+
+
+.slide-show img {
+  filter: grayscale(100%);
+  transition:linear .3s;
+  width:800px; height:400px;
+}
+
+.slide-show img:hover {
+  filter: grayscale(0%);
+}
+
+.slide-show .active {
+  filter: grayscale(0%);
+}
+
+.slide-show{
+  margin: 2rem;
+}
+
+/* end gallery */
+
+/* footer */
+
+footer{
+    background-color: #131313;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: auto;
+    padding: 0 5%;
+}
+
+footer li a{
+    color: #7D7D7D;
+    position: relative;
+}
+
+footer li {
+  gap: 2rem;
+}
+
+footer li a:hover{
+  color: white;
+}
+
+.text-footer h3{
+    color: white;
+    font-size: 1.8rem;
+}
+
+.text-footer {
+    margin: 2.5rem 5% 1rem;
+    display: inline-block;
+}
+
+
+.text-footer li{
+    margin-top: 8px;
+}
+
+footer li a::after{
+  content: '';
+  height: 2px;
+  width: 0;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.4s linear;
+}
+
+footer li a:hover::after{
+  width: 100%;
+}
+
+.logo-footer{
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  cursor: pointer;
+  font-weight: 900;
+  color: white;
+}
+
+
+
+.copy-right{
+  color: #7D7D7D;
+  margin-bottom: 1rem;
+}
+
+.logo-copyright{
+  display: inline-block;
+  text-align: right;
+  float: right;
+  right: 0;
+  
+}
+
+.logo-icon {
+  padding: 0 5% 2rem;
+}
+
+
+
+/* garis */
+
+.garis hr{
+  width: 95%;
+  margin: 0 auto 20px;
+  border-color: #7D7D7D;
+  
+}
+
+.logo-icon i {
+  font-size: 2rem;
+  color: #7D7D7D;
+  padding-right: 7px;
+  transition: 0.3s;
+}
+
+
+.logo-icon i:hover{
+ color: white;
+}
+/* laptop */
+
+
+@media(max-width: 900px) { 
+  .contain-box{
+    flex-direction: column;
+  }
+
+  .text{
+    text-align: center;
+  }
+
+  .card-begginer {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .all-card,
+  .list-game
+  {
+    flex-wrap: wrap;
+  }
+
+  .slide-show img 
+  {
+    width: 500px;
+    height: 250px;
+  }
+
+}
+
+@media(max-width: 590px) {
+  .card-begginer{
+    width: 400px;
+  }
+
+  body {
+    font-size: 90%;
+  }
+
+  .slide-show-wrapper {
+   margin-top: 1rem;
+  }
+
+  .slide-show img {
+    width: 300px;
+    height: 150px;
+  }
+  
+
+}
+
+@media(max-width: 500px) {
+  body{
+    font-size: 70%;
+  }
+
+  .card-begginer{
+    width: 300px;
+  }
+
+  .list-game {
+    justify-content: center;
+  }
+
+  .text-footer {
+    margin-right: 20%;
+    display:flow-root;
+  }
+
+  .list-game img  {
+    width: 100px;
+  }
+
+
+}
+
+
+@media(max-width: 420px) {
+
+  body {
+    font-size: 50%;
+  }
+  nav{
+    flex-wrap: wrap;
+    margin: 2% 0 4%;
+  }
+
+
+.navbar-nav {
+    background-color: #d1d0d0;
+   flex-direction: column;
+   width: 100%;
+    margin: 0;
+  }
+
+
+  
+  .logo-icon i{
+    font-size: 1.5rem;
+  }
+
+  .all-card {
+    justify-content: center;
+  } 
+
+  .logo,
+.search {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+}
+
+@media(max-width: 360px) {
+  .card-begginer {
+    width: 250px;
+    height:250px;
+  }
+  
+}
